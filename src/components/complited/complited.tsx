@@ -1,13 +1,9 @@
-import React from "react";
 import cls from "./complited.module.scss";
 import { ChevronRight } from "lucide-react";
 import Button from "@/components/button/button";
 
-interface WarnProps {
-  setIndex: React.Dispatch<React.SetStateAction<number>>;
-}
 
-const Complited: React.FC<WarnProps> = ({ setIndex }) => {
+const Complited = () => {
   return (
     <div className={cls.complited}>
       <div className={cls.info}>

@@ -10,7 +10,6 @@ import React from "react";
 const App = () => {
   const [index, setIndex] = React.useState(0);
   console.log(index);
-  
 
   return (
     <div className="app">
@@ -26,7 +25,7 @@ const App = () => {
             <Quiz index={index} setIndex={setIndex} />
           )}
           {index === 5 && <Loading setIndex={setIndex} />}
-          {index === 6 && <Complited setIndex={setIndex} />}
+          {index === 6 && <Complited />}
         </div>
         <Politic />
       </div>
