@@ -5,11 +5,15 @@ import Politic from "@/components/politic/politic";
 import Prew from "@/components/prew/prew";
 import Quiz from "@/components/quiz/quiz";
 import Warn from "@/components/warn/warn";
+import { preloadResources } from "@/lib/preload";
 import React from "react";
 
 const App = () => {
   const [index, setIndex] = React.useState(0);
-  console.log(index);
+
+  React.useEffect(() => {
+    preloadResources();
+  }, []);
 
   return (
     <div className="app">

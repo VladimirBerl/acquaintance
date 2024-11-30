@@ -8,7 +8,7 @@ const Loading: React.FC<LoadingProps> = ({ setIndex }) => {
   React.useEffect(() => {
     setTimeout(() => {
       setIndex(6);
-    }, 4000);
+    }, 3000);
   }, []);
 
   return (
