@@ -1,0 +1,25 @@
+.politic {
+  color: #a0abc1;
+  font-size: 13px;
+  p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    a {
+      color: #a0abc1;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      max-width: 140px;
+      &:hover {
+        color: #4a85de;
+        text-decoration: underline;
+      }
+    }
+  }
+}

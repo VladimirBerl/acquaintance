@@ -1,0 +1,63 @@
+.girl {
+  position: relative;
+  width: 50%;
+  height: 100%;
+
+  .girl-img {
+    height: 100vh;
+    img {
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      margin-bottom: -10px;
+    }
+  }
+
+  .group {
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    color: #ffffff;
+    font-size: 32px;
+
+    .onlain {
+      position: absolute;
+      right: -15px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #9aef80;
+      animation: onlain 1s infinite;
+      transition: all;
+    }
+  }
+}
+
+@keyframes onlain {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .girl {
+    width: 100%;
+    height: 35vh;
+    .girl-img {
+      height: 35vh;
+    }
+  }
+
+  .group {
+    span {
+      color: #f86b6b;
+    }
+  }
+}
