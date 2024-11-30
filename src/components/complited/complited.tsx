@@ -7,7 +7,7 @@ const Complited = () => {
   return (
     <div className={cls.complited}>
       <div className={cls.info}>
-        <img src="/public/assets/grateful.png" alt="grateful" />
+        <img src="/assets/grateful.png" alt="grateful" />
         <h3>Спасибо!</h3>
         <p>
           Мы проанализировали Ваши ответы и нашли наиболее подходящих для вас

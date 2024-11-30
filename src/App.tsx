@@ -16,7 +16,7 @@ const App = () => {
       <Girls index={index} />
       <div className="main">
         <div className="logo">
-          <img src="/public/assets/logo_inq.png" alt="logo" />
+          <img src="/assets/logo_inq.png" alt="logo" />
         </div>
         <div className="content">
           {index === 0 && <Prew setIndex={setIndex} />}
