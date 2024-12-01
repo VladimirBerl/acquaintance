@@ -10,7 +10,7 @@ import { preloadResources } from "@/lib/preload";
 import React from "react";
 
 const App = () => {
-  const [index, setIndex] = React.useState(7);
+  const [index, setIndex] = React.useState(0);
 
   React.useEffect(() => {
     preloadResources();
