@@ -2,8 +2,11 @@ import cls from "./complited.module.scss";
 import { ChevronRight } from "lucide-react";
 import Button from "@/components/button/button";
 
+interface ComplitedProps {
+  setIndex: React.Dispatch<React.SetStateAction<number>>;
+}
 
-const Complited = () => {
+const Complited: React.FC<ComplitedProps> = ({ setIndex }) => {
   return (
     <div className={cls.complited}>
       <div className={cls.info}>
@@ -14,7 +17,7 @@ const Complited = () => {
           девушек. Чтобы начать знакомство расскажите немного о себе!
         </p>
       </div>
-      <Button onClick={() => window.open("https://site.com/form", "_blank")}>
+      <Button onClick={() => setIndex(7)}>
         Продолжить <ChevronRight />
       </Button>
     </div>

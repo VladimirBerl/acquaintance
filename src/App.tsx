@@ -1,4 +1,5 @@
 import Complited from "@/components/complited/complited";
+import Form from "@/components/form/form";
 import Girls from "@/components/girls/girls";
 import Loading from "@/components/loading/loading";
 import Politic from "@/components/politic/politic";
@@ -9,7 +10,7 @@ import { preloadResources } from "@/lib/preload";
 import React from "react";
 
 const App = () => {
-  const [index, setIndex] = React.useState(0);
+  const [index, setIndex] = React.useState(7);
 
   React.useEffect(() => {
     preloadResources();
@@ -29,7 +30,8 @@ const App = () => {
             <Quiz index={index} setIndex={setIndex} />
           )}
           {index === 5 && <Loading setIndex={setIndex} />}
-          {index === 6 && <Complited />}
+          {index === 6 && <Complited setIndex={setIndex}/>}
+          {index === 7 && <Form/>}
         </div>
         <Politic />
       </div>

@@ -41,4 +41,10 @@ export const girls = [
     age: 30,
     img: "/assets/img_7.jpg",
   },
+  {
+    id: 3,
+    name: "Лиза",
+    age: 20,
+    img: "/assets/img_3.jpg",
+  },
 ];
