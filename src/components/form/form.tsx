@@ -27,17 +27,9 @@ const Form = () => {
                 <input type="text" required />
               </label>
               <label>
-            Ваш город
-            <input type="text" required />
-          </label>
-          <label>
-            Ваша дата рождения
-            <input type="date" required />
-          </label>
-          <label>
-            Ваша почта
-            <input type="email" required />
-          </label>
+                Ваша почта
+                <input type="email" required />
+              </label>
             </div>
             <Button type="submit">Отправить</Button>
           </form>
